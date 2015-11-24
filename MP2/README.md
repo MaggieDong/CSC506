@@ -206,7 +206,7 @@ Compilation Done ---> nothing else to make :)
 
  
 
-./smp_cache <cache_size>  <assoc> <block_size> <num_processors> <protocol> <trace_file>
+./smp_cache < cache_size >  < assoc > < block_size > < num_processors > < protocol > < trace_file >
 
  
 
