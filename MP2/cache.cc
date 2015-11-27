@@ -250,12 +250,14 @@ void Cache::MESIProtocolBus(ulong BusFlags, ulong addr) {
             flushes ++;
             writeBacks ++;
             interventions ++;
+            memTrans ++;
             line->setFlags(SHARED);
         }
         else if (BusFlags == BUSRDX) { //M BUSRDX/Flush I
             flushes ++;
             writeBacks ++;
             invalidations ++;
+            memTrans ++;
             line->setFlags(INVALID);
         }
     }
